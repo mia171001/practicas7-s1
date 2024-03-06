@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.img-article {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+.section-two {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.image-group {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.text-image {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: space-evenly;
+}
+
+@media (min-width: 375px) {
+    .section-content {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(6, 300px);
+        justify-content: center;
+
+
+    }
+
+    .img-article {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img {
+        width: 50px;
+        height: 25px;
+    }
+
+    .section-two {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+/* MOBILE FIRST  */
+
+
+@media (min-width: 500px) {
+    .section-content {
+        display: grid;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(3, 240px);
+        justify-content: center;
+
+    }
+
+    .section-two {
+        width: 400px;
+        height: 130px;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .section-content {
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        grid-template-rows: repeat(2, 240px);
+        justify-content: center;
+    }
+
+    .section-two {
+        width: 400px;
+        height: 100px;
+    }
+
+    img {
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .section-content {
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        grid-template-rows: repeat(2, 260px);
+        justify-content: space-evenly;
+    }
+
+    .img-article {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .section-two {
+        width: 500px;
+        height: 100px;
+    }
+}
